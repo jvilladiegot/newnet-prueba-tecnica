@@ -34,32 +34,32 @@ para iniciar el proyecto lo podemos realizar con docker compose
 * npm run build
 
 
-    ejecutamos las migraciones y los seeders
-* php artisan migrate --seed
-
-
     copiamos el archivo de variables de entorno
 * cp .env.example .env
 
 
-    configuramos la base de datos 
-* para docker compose
-  
-    -DB_CONNECTION=mysql
-    
-    -DB_HOST=mysql
-    
-    -DB_PORT=3306
-    
-    -DB_DATABASE=newnet
-    
-    -DB_USERNAME=newnet
-    
-    -DB_PASSWORD=newnet
-
-
     configuramos nuestra llave 
 * php artisan key:generate
+
+
+    configuramos la base de datos 
+* para docker compose
+
+  -DB_CONNECTION=mysql
+
+  -DB_HOST= ejemplo 192.168.0.20
+
+  -DB_PORT=3306
+
+  -DB_DATABASE=newnet
+
+  -DB_USERNAME=newnet
+
+  -DB_PASSWORD=newnet
+
+
+    ejecutamos las migraciones y los seeders
+* php artisan migrate --seed
 
 
     para abrir el sistema abrimos un navegador web y escribimos nuestra ip local y el puerto 3001
